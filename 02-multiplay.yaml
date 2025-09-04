@@ -3,11 +3,11 @@
   tasks: 
   - name: play 01 task:01
     ansible.builtin.debug:
-    msg: play 01 is ok
+      msg: play 01 is ok
 
 - name: multiple play books
   hosts: web
   tasks: 
   - name: play 02 task:02
     ansible.builtin.debug:
-    msg: play 02 is ok
+      msg: play 02 is ok
