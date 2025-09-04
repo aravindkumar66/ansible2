@@ -3,5 +3,14 @@
   tasks:
   - name: install nginx
     ansible.builtin.package:
-    name: nginx
-    state: absent
+      name: nginx
+      state: absent
+
+# - name: nginx install and run
+#   hosts: web
+#   #become: yes #take sudo access
+#   tasks: 
+#   - name: install nginx 
+#     ansible.builtin.package: #hetrogeneous
+#       name: nginx
+#       state: present
