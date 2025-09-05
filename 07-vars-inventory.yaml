@@ -4,3 +4,13 @@
     - name: print the variables
       ansible.builtin.debug:
         msg: "I am learning the course is {{COURSE}}, Duration is {{DURATION}}, Trainer is {{TRAINER}}"
+
+
+
+
+- name: variables to print
+  hosts: web
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
