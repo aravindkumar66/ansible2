@@ -1,0 +1,8 @@
+- name: check the number
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: nuymber
+    prompt: enter the number
+    private: false
+    
