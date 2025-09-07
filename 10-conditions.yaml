@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: nuymber
+  - name: number
     prompt: enter the number
     private: false
   tasks:
