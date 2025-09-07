@@ -5,4 +5,14 @@
   - name: nuymber
     prompt: enter the number
     private: false
-    
+  task:
+  - name: print the given number is lessthan
+    ansible.builtin.debug:
+      msg: "the given number {{number}} is less than 10"
+    when: number | < 10
+
+  - name: print the given number is greater than
+    ansible.builtin.debug:
+      msg: "the given number {{number}} is greaterthan or eqal to 10"
+    when: number | >= 10
+
