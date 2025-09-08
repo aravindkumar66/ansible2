@@ -1,0 +1,15 @@
+- name: loops demo
+  hosts: local
+  connection: local
+  tasks:
+  - name: loops
+    ansible.builtin.debug:
+      msg: "Hello {{ item }}"
+    loop:
+    - rama
+    - krishna
+    - arjuna
+    - sai baba
+    - dattatreya
+    - sri pada sri vallabha
+  
