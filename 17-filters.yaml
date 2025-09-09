@@ -10,4 +10,4 @@
     vars:
       value: "Hello Shiva Kumar"
     ansible.builtin.debug:
-      msg: " {{ value | upper }} "
+      msg: " {{ value | lower }} "
