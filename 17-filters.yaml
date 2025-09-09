@@ -1,7 +1,13 @@
 - name: chekcing filters
-  hosts: l44.204.176.123
+  hosts: local
   connection: local
   tasks:
   - name: print the course
     ansible.builtin.debug:
       msg: "the course is: {{ course | default ('ansible') }}"
+
+  - name: print lower to uppercase
+    vars:
+      value: "Hello Shiva Kumar"
+    ansible.builtin.debug:
+      msg: " {{ value | upper }} "
