@@ -10,4 +10,10 @@
     vars:
       value: "Hello Shiva Kumar"
     ansible.builtin.debug:
-      msg: " {{ value | lower }} "
+      msg: " {{ value | upper }} "
+
+  - name: removie duplicate values
+    vars:
+      value: { 1,2,3,3,4,5,6,2,4,8,7}
+    ansible.builtin.debug:
+      msg: "{{ vadlue | unique }}"
