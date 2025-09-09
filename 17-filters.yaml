@@ -1,5 +1,5 @@
 - name: chekcing filters
-  hosts: local
+  hosts: l44.204.176.123
   connection: local
   tasks:
   - name: print the course
