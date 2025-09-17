@@ -9,7 +9,7 @@
       - mysql
       - backend
       - frontend
-    zone: akdevops.online 
+    zone: akdevops.online
 
   tasks:
 
